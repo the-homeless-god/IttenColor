@@ -1,8 +1,8 @@
-name: npm-publish
+name: typescript-push
 on:
   push:
     branches:
-      - master # Change this to your default branch
+      - master
 jobs:
   npm-publish:
     name: npm-publish
@@ -18,7 +18,7 @@ jobs:
           node-version: "24.x"
           registry-url: "https://registry.npmjs.org"
       - run: npm install
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm publish
