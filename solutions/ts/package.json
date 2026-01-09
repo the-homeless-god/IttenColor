@@ -5,22 +5,14 @@
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "author": "Marat Zimnurov",
-  "keywords": [
-    "colors",
-    "itten",
-    "theory of color",
-    "how to find itten color"
-  ],
+  "keywords": ["colors", "itten", "theory of color", "how to find itten color"],
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/the-homeless-god/itten-color.git"
   },
   "homepage": "https://github.com/the-homeless-god/itten-color",
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "files": ["dist", "README.md"],
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
@@ -35,5 +27,8 @@
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
