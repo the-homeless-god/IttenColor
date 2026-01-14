@@ -1,12 +1,12 @@
 {
   "name": "@the-homeless-god/itten-color",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "author": "Marat Zimnurov",
   "keywords": ["colors", "itten", "theory of color", "how to find itten color"],
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/the-homeless-god/itten-color.git"
