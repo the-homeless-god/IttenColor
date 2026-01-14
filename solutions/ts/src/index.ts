@@ -8,8 +8,8 @@ const decrementColorNumber = (colorNumber: number): number => {
 
 export const getIttenColor = (color: Color) => {
   return {
-    b: decrementColorNumber(color.b),
-    g: decrementColorNumber(color.g),
     r: decrementColorNumber(color.r),
+    g: decrementColorNumber(color.g),
+    b: decrementColorNumber(color.b),
   }
 }
